@@ -5,13 +5,6 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subtitle Composer", "Subtitle Composer\Subtitle Composer.csproj", "{AAF42B20-F9E1-4A54-8AB5-D249143D6BEA}"
 EndProject
-<<<<<<< HEAD
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtitlesPlugger", "..\SubtitlesPlugger\SubtitlesPlugger\SubtitlesPlugger.csproj", "{AE2BA15B-6730-425D-AA32-FD0B3079A43F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubRip Pluggin", "..\SubRip Pluggin\SubRip Pluggin\SubRip Pluggin.csproj", "{50F93D82-F310-4C00-A23C-078D58745FD7}"
-EndProject
-=======
->>>>>>> 6ec2bfae67cca3e79d5a9b04db7d38bdee1df3f0
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,17 +15,6 @@ Global
 		{AAF42B20-F9E1-4A54-8AB5-D249143D6BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF42B20-F9E1-4A54-8AB5-D249143D6BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAF42B20-F9E1-4A54-8AB5-D249143D6BEA}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-		{AE2BA15B-6730-425D-AA32-FD0B3079A43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE2BA15B-6730-425D-AA32-FD0B3079A43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE2BA15B-6730-425D-AA32-FD0B3079A43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE2BA15B-6730-425D-AA32-FD0B3079A43F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50F93D82-F310-4C00-A23C-078D58745FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50F93D82-F310-4C00-A23C-078D58745FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50F93D82-F310-4C00-A23C-078D58745FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50F93D82-F310-4C00-A23C-078D58745FD7}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> 6ec2bfae67cca3e79d5a9b04db7d38bdee1df3f0
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
