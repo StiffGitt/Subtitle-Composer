@@ -108,12 +108,8 @@ namespace Subtitle_Composer
                 return;
             string path = dialog.FileName;
             string field = (isTranslation.IsChecked)? "Translation" : "Text";
-            //string field = "Translation";
             List<TextInterval> textIntervals = (List<TextInterval>)pluggin.Load(path);
             GetIntervals(textIntervals, field);
-            //GetIntervals(subtitleObjects, "Text");
-
-            //MessageBox.Show(usedPluggin.Name);
         }
         private void PlugginItemSave_Click(object sender, RoutedEventArgs e)
         {
@@ -121,7 +117,6 @@ namespace Subtitle_Composer
             IPluggin pluggin = (IPluggin)item.DataContext;
             Save(pluggin, "Text"); 
             
-            //MessageBox.Show(usedPluggin.Name);
         }
 
         private void PlugginItemSaveTrans_Click(object sender, RoutedEventArgs e)
@@ -129,7 +124,6 @@ namespace Subtitle_Composer
             MenuItem item = (MenuItem)sender;
             IPluggin pluggin = (IPluggin)item.DataContext;
             Save(pluggin, "Translation");
-            //MessageBox.Show(usedPluggin.Name);
         }
         private List<TextInterval> GetTextIntervals(string field)
         {
@@ -162,11 +156,9 @@ namespace Subtitle_Composer
             var collection = GetTextIntervals(field);
             pluggin.Save(filePath, collection);
 
-            //MessageBox.Show(filePath);
         }
         private void GetIntervals(List<TextInterval> textIntervals, string field)
         {
-            //var list = new List<Interval>();
             Action<Interval, string> setText;
             if (field == "Text")
                 setText = new Action<Interval, string>((x, y) => x.Text = y);
@@ -196,10 +188,6 @@ namespace Subtitle_Composer
         }
         private void isTranslation_Checked(object sender, RoutedEventArgs e)
         {
-            //if(!((MenuItem)sender).IsChecked)
-            //    dataTranslationColumn.Visibility = Visibility.Collapsed;
-            //else 
-            //MessageBox.Show(Intervals.First().Text);
             dataTranslationColumn.Visibility = Visibility.Visible;
         }
         private void SetSubtitles()

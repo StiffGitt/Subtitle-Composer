@@ -20,14 +20,6 @@
         <System:Boolean x:Key="IsCheckedMenu"></System:Boolean>
         <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter" />
     </Window.Resources>
-    <!--https://wpf-tutorial.com/audio-video/how-to-creating-a-complete-audio-video-player/?fbclid=IwAR3F3-M6lX4pEFNDsbNmD8mCbplnmzI5-rFNDo-nDHnphY1BYMeYsjQMS2s-->
-    <!--<Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Open" CanExecute="Open_CanExecute" Executed="Open_Executed"/>
-        <CommandBinding Command="MediaCommands.Play" CanExecute="Play_CanExecute" Executed="Play_Executed" />
-        <CommandBinding Command="MediaCommands.Pause" CanExecute="Pause_CanExecute" Executed="Pause_Executed" />
-        <CommandBinding Command="MediaCommands.Stop" CanExecute="Stop_CanExecute" Executed="Stop_Executed" />
-        
-    </Window.CommandBindings>-->
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Open" CanExecute="Open_CanExecute" Executed="Open_Executed" />
         <CommandBinding Command="MediaCommands.Play" CanExecute="Play_CanExecute" Executed="Play_Executed" />
@@ -51,13 +43,11 @@
             </MenuItem>
             <MenuItem Header="Subtitles">
                 <MenuItem Name="openPlugginMenu" Header="Open...">
-                    <!--<MenuItem Header="xd"/>-->
                 </MenuItem>
                 <MenuItem Name="savePlugginMenu" Header="Save..."/>
                 <MenuItem Name="saveTransPlugginMenu" Header="Save Translation..." IsEnabled="{Binding ElementName=isTranslation, Path=IsChecked}"/>
                 <Separator/>
                 <MenuItem  x:Name="isTranslation" Header="Translation"  IsCheckable="True" Checked="isTranslation_Checked" Unchecked="isTranslation_Unchecked"/>
-                <!--IsChecked="{ Binding Source={StaticResource IsCheckedMenu}, Path=IsChecked, Mode=TwoWay}"-->
             </MenuItem>
             <MenuItem Header="Help">
                 <MenuItem Header="About..."/>
